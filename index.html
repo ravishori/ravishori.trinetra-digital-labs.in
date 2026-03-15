@@ -50,10 +50,13 @@ top:0;
 z-index:100;
 }
 
-nav h1{
-font-family:'Orbitron';
-color:#4da3ff;
+/* LOGO */
+
+.logo img{
+height:60px;
 }
+
+/* NAV LINKS */
 
 nav a{
 color:white;
@@ -179,7 +182,11 @@ color:#94a3b8;
 
 <nav>
 
-<h1>TRINETRA</h1>
+<div class="logo">
+<a href="/">
+<img src="logo.png" alt="Trinetra Digital Labs">
+</a>
+</div>
 
 <div>
 <a href="#about">About</a>
@@ -329,7 +336,7 @@ Trinetra Digital Labs<br><br>
 
 📍 Mumbai, Maharashtra, India – 400101<br><br>
 
-📧 [ravishori@gmail.com](mailto:ravishori@gmail.com)<br><br>
+📧 <a href="mailto:ravishori@gmail.com">[ravishori@gmail.com](mailto:ravishori@gmail.com)</a><br><br>
 
 📱 WhatsApp: +91 9987671916
 
@@ -382,11 +389,9 @@ ctx.fill();
 }
 
 function init(){
-
 for(let i=0;i<150;i++){
 particles.push(new Particle());
 }
-
 }
 
 function animate(){
